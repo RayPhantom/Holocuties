@@ -22,7 +22,7 @@
 }
 
 html, body{
-	background-color: #c2d6ed;
+	background-color: #07072b;
 	color: #fff;
 	font-size: 20px;
 	height: 100%;
@@ -95,7 +95,6 @@ footer{
 
 .vtcont div{
 	text-align: center;
-	color: #000;
 	margin-top: 40px;
 }
 
@@ -106,13 +105,13 @@ footer{
 }
 
 .soundbut{
-	color: black;
+	color: #fff;
 	font-family: sans-serif;
 	font-size: 20px;
 	width: 100px;
 	border: 3px solid #3263c7;
 	border-radius: 50px;
-	background-color: rgba(255, 255, 255, 0.5);
+	background-color: rgba(0, 0, 0, 0.5);
 	padding: 8px 14px;
 	text-align: center;
 }
@@ -132,7 +131,6 @@ footer{
 }
 
 .arrbut:hover{
-	color: black;
 	font-family: sans-serif;
 	color: #fff;
 	-webkit-transition: all 0.3s ease;;
@@ -150,7 +148,7 @@ footer{
 	top: 50%;
 	left: 50%;
     transform: translate(-50%, -50%);
-	border: 3px solid #3263c7;
+	border: 3px solid #002c85;
 	border-radius: 20px;
 	padding: 20px 30px;
 	backdrop-filter: blur(5px);
@@ -166,13 +164,12 @@ a{
 }
 
 .menuwin a{
-	color: black;
 	text-decoration: none;
 	font-family: sans-serif;
 	font-size: 20px;
-	border: 3px solid #3263c7;
+	border: 3px solid #002c85;
 	border-radius: 50px;
-	background-color: rgba(255, 255, 255, 0.5);
+	background-color: rgba(0, 0, 0, 0.5);
 	padding: 5px 14px;
 	text-align: center;
 }
@@ -198,17 +195,10 @@ svg {
 }
 
 svg line {
-  stroke: #3263c7;
+  stroke: #002c85;
   stroke-width: 5;
 }
 
 svg:hover line {
   stroke: #fff;
-}
-
-.cat{
-	position: absolute;
-	cursor: pointer;
-	right: -100px;
-	top: 350px;
 }

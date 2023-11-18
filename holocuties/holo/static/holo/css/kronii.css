@@ -12,5 +12,29 @@ footer{
 
 .menu{
 	border: 3px solid #B8860B;
-	background-color: rgba(255, 255, 255, 0.5);
+}
+
+.contcont .stext, .menuwin .stext{
+	color: #B8860B;
+}
+
+.menuwin{
+	border-color: #B8860B;
+}
+
+.menuwin a{
+	color: white;
+	border-color: #B8860B;
+}
+
+.menuwin a:hover{
+	color: #B8860B;
+}
+
+svg line {
+  stroke: #B8860B;
+}
+
+.soundbut{
+	border-color: #B8860B;
 }

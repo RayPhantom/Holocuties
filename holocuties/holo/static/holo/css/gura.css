@@ -14,3 +14,7 @@ footer{
 	border: 3px solid #3263c7;
 	background-color: rgba(255, 255, 255, 0.5);
 }
+
+.vtcont div{
+	color: black;
+}
