@@ -2,16 +2,16 @@
 let button = document.querySelector(".soundbut");
 let arrbut = document.querySelectorAll(".arrbut");
 let audio = document.querySelectorAll(".sound");
+let img = document.querySelectorAll(".img");
 let pic = document.querySelectorAll(".pic");
 let cont = document.querySelectorAll(".contcont")
 let i = 0;
 let cou = 0;
 let scount = document.querySelectorAll(".scount");
 let c = audio.length - 1;
-
-let count = localStorage.getItem("gwak");
-
+let cat = document.querySelector(".cat");
 let len = localStorage.length;
+let main = document.querySelector(".maintag");
 
 //Вывод чисел
 
@@ -97,6 +97,33 @@ button.onclick = function() {
 			};
 		});
 	};
+
+	//ANIMATION
+
+	var id = null;
+
+	var elem = document.createElement("img");
+	elem.src = img[i].src;
+	elem.style.position = "absolute";
+	elem.style.right = "-510px";
+	elem.style.top = 180 + "px";
+	elem.style.width = "300px";
+
+	document.body.appendChild(elem);
+
+	var pos = -510;
+	var limit = window.innerWidth + 510;
+	clearInterval(id);
+	id = setInterval(frame, 12);
+	function frame() {
+		if (pos >= limit) {
+			clearInterval(id);
+			elem.remove()
+		} else {
+			pos += 20;
+			elem.style.right = pos + 'px';
+		}
+	}
 };
 
 //EXIT

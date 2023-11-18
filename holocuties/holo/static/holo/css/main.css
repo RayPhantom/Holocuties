@@ -26,6 +26,7 @@ html, body{
 	color: #fff;
 	font-size: 20px;
 	height: 100%;
+	overflow-x: hidden;
 }
 
 .page{
@@ -203,4 +204,11 @@ svg line {
 
 svg:hover line {
   stroke: #fff;
+}
+
+.cat{
+	position: absolute;
+	cursor: pointer;
+	right: -100px;
+	top: 350px;
 }

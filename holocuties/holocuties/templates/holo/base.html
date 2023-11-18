@@ -25,12 +25,13 @@
 		</header>
 		<main>
 			<div class="maintag">
+				<div class="cat">ПИСЬКА</div>
 				<div class="mainconteiner">
 					<div class="arrbut unsel"><</div>
 						<div class="vtcont">
 							{% for c in obj %}
 								<div class="contcont" hidden>
-									<div class="pic"><img src="{{ c.img.url}}"></div>
+									<div class="pic"><img class="img" src="{{ c.img.url}}"></div>
 									<audio class="sound" src="{{c.audio.url}}"></audio>
 									<div><b><span class="sjsid">{{c.coutnName}}</span> <span class="stext scount">0</span> times!</b></div>
 								</div>
