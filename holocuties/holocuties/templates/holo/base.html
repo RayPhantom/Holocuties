@@ -1,0 +1,79 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Holocuties! - {{title}}</title>
+		<link rel="stylesheet" type="text/css" href="{% static 'holo/css/main.css' %}">
+		{% block style %}
+		<link type="image/x-icon" href="{% static 'holo/img/hc.svg' %}" rel="shortcut icon">
+		<link type="image/x-icon" href="{% static 'holo/img/hc.svg' %}" rel="icon">
+		{% endblock %}
+	</head>
+
+	<body class="page">
+		<header>
+			<div class="hconteiner">
+				<a class="menulink" href="{% url 'holomain' %}">
+					<h2 class="unsel"><span class="stext">holo</span>cuties!</h2>
+				</a>
+			</div>
+			<div class="menu"><b>menu</b></div>
+			<div class="hcont"></div>
+		</header>
+		<main>
+			<div class="maintag">
+				<div class="mainconteiner">
+					<div class="arrbut unsel"><</div>
+						<div class="vtcont">
+							{% for c in obj %}
+								<div class="contcont" hidden>
+									<div class="pic"><img src="{{ c.img.url}}"></div>
+									<audio class="sound" src="{{c.audio.url}}"></audio>
+									<div><b><span class="sjsid">{{c.coutnName}}</span> <span class="stext scount">0</span> times!</b></div>
+								</div>
+							{% endfor %}
+						</div>
+					<div class="arrbut unsel">></div>
+				</div>
+				<div class="soundbutcont">
+					<div class="soundbut unsel"><b>SOUND</b></div>
+				</div>
+			</div>
+		</main>
+
+		<div class="menuwin" hidden>
+			<div class="exit">
+				<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+					<line x1="0" x2="100" y1="0" y2="100" />
+					<line x1="0" x2="100" y1="100" y2="0" />
+				</svg>
+			</div>
+			<h3 class="stext">Vtubers</h3>
+			<div class="menulist">
+				<a href="{% url 'kronii' %}">&#9203;Ouro Kronii</a>
+				<a href="{% url 'calli' %}">&#128128;Mori Calliope</a>
+				<a href="{% url 'gura' %}">&#128305;Gawr Gura</a>
+			</div>
+			<h4 class="stext">Inspired by</h4>
+			<div class="menulist">
+				<a href="https://kurukuru.morian.icu/" target="_blank">Kurukuru.morian.icu</a>
+				<a href="https://kronii-cute.com/" target="_blank">Kronii Soundboard</a>
+			</div>
+			<h4 class="stext">Created by</h4>
+			<div class="menulist">
+				<a class="stext" href="https://github.com/RayPhantom" target="_blank">RayPhantom (GitHub)</a>
+			</div>
+		</div>
+
+		<footer>
+			
+		</footer>
+
+		<script src="{% static 'holo/js/mainscript.js' %}"></script>
+		{% block script %}
+		{% endblock %}
+	</body>
+</html>

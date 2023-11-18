@@ -1,0 +1,16 @@
+html, body{
+	background-color: #4a2737;
+}
+
+.hcont{
+	background-color: #f58cbb;
+}
+
+footer{
+	background-color: #f58cbb;
+}
+
+.menu{
+	border: 3px solid #f58cbb;
+	background-color: rgba(255, 255, 255, 0.5);
+}
