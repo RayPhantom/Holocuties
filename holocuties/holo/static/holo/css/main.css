@@ -1,6 +1,6 @@
 *{
 	margin: 0;
-	font-family: sans-serif;
+	font-family: "Balsamiq_Sans", sans-serif;
 }
 
 ::-webkit-scrollbar {
@@ -39,14 +39,18 @@ main {
 }
 
 footer{
-	background-color: #3263c7;
+	background-color: #002c85;
 	padding-top: 70px;
 	clip-path: polygon(0 100%, 100% 0%, 100% 100%, 0 100%);
 	margin: 0;
 }
 
+h2{
+	font-family: sans-serif;
+}
+
 .hcont{
-	background-color: #3263c7;
+	background-color: #002c85;
 	clip-path: polygon(0 0, 100% 0%, 100% 0%, 0 100%);
 	padding: 70px 0px 0px 30px;
 }
@@ -106,7 +110,6 @@ footer{
 
 .soundbut{
 	color: #fff;
-	font-family: sans-serif;
 	font-size: 20px;
 	width: 100px;
 	border: 3px solid #3263c7;
@@ -119,24 +122,30 @@ footer{
 .menu:hover, .soundbut:hover{
 	background-color: rgba(255, 255, 255, 1);
 	color: rgba(0, 0, 0, 0.5);
-	-webkit-transition: all 0.3s ease;;
-  	-moz-transition: all 0.3s ease;;
-  	-o-transition: all 0.3s ease;;
-  	transition: all 0.3s ease;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+.soundbut:active{
+	width: 80px;
+	margin-top: 2px;
+	padding: 7px 13px;
+	font-size: 18px;
 }
 
 .arrbut{
-	color: black;
-	font-family: sans-serif;
+	color: #66a6ff;
+	font-family: "Comfortaa", sans-serif;
 }
 
 .arrbut:hover{
-	font-family: sans-serif;
 	color: #fff;
-	-webkit-transition: all 0.3s ease;;
-  	-moz-transition: all 0.3s ease;;
-  	-o-transition: all 0.3s ease;;
-  	transition: all 0.3s ease;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
 }
 
 .pic img{
@@ -147,7 +156,8 @@ footer{
 	position: fixed;
 	top: 50%;
 	left: 50%;
-    transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	font-family: "Playpen_Sans", sans-serif;
 	border: 3px solid #002c85;
 	border-radius: 20px;
 	padding: 20px 30px;
@@ -165,7 +175,7 @@ a{
 
 .menuwin a{
 	text-decoration: none;
-	font-family: sans-serif;
+	font-family: "Balsamiq_Sans", sans-serif;
 	font-size: 20px;
 	border: 3px solid #002c85;
 	border-radius: 50px;
@@ -201,4 +211,19 @@ svg line {
 
 svg:hover line {
   stroke: #fff;
+}
+
+@font-face {
+font-family: Balsamiq_Sans;
+src: url("fonts/Balsamiq_Sans/BalsamiqSans-Regular.ttf");
+}
+
+@font-face {
+font-family: Playpen_Sans;
+src: url("fonts/Playpen_Sans/static/PlaypenSans-Regular.ttf");
+}
+
+@font-face {
+font-family: Comfortaa;
+src: url("fonts/Comfortaa/static/Comfortaa-Bold.ttf");
 }
